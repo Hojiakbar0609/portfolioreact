@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 function Contact() {
   return (
-    <div className='bg-black h-[100vh]'>
-      <div className="text-sm breadcrumbs">
+    <div className='bg-black pb-2 h-screen lg:h-[100%]'>
+      <div className="text-sm breadcrumbs ml-4 lg:ml-0">
         <ul>
           <li>
             <NavLink to='/'>
@@ -21,15 +21,16 @@ function Contact() {
           </li> 
         </ul>
       </div>
-      <div className='bg-neutral-900 rounded-3xl border border-neutral-700 flex flex-col justify-center items-center lg:px-20 lg:py-32 mt-16'>
-      <h2 className='text-white text-3xl lg:text-5xl font-bold '>Let's talk</h2>
-      <p className='w-[600px] mt-5 text-center text-zinc-400 text-lg font-normal lg:leading-[27px]'>Interested in working together or have a question? Feel free to reach out. I'm here to help you turn your ideas into amazing digital realities. Looking forward to hearing from you soon!</p>
-      <div className='flex mt-12 items-center gap-x-4'>
+      <div className='m-4 lg:m-0 lg:mt-4 bg-neutral-900 rounded-3xl border border-neutral-700 flex flex-col justify-center items-center lg:px-20 lg:py-32 mt-16'>
+      <h2 className='text-white text-3xl lg:text-5xl font-bold py-4'>Let's talk</h2>
+      <p className=' p-4 lg:w-[600px] mt-5 text-center text-zinc-400 text-lg font-normal lg:leading-[27px]'>Interested in working together or have a question? Feel free to reach out. I'm here to help you turn your ideas into amazing digital realities. Looking forward to hearing from you soon!</p>
+      <div className='flex flex-col gap-y-3 lg:flex mt-12 items-center gap-x-4'>
         <button className='flex bg-black py-2 px-[17px] rounded-lg border border-neutral-700 items-center hover:shadow-md hover:shadow-blue-950 duration-200'>
           <MdEmail className='mr-[10px]' />
           <a href="mailto:haydarovhojiakbar97@gmail.com">haydarovhojiakbar97@gmail.com</a>
         </button>
-        <a href='https://t.me/Haydarov_22_01' className='bg-black py-[12px] px-3 border border-neutral-700 rounded-lg hover:shadow-md hover:shadow-blue-950 duration-200'>
+        <div className='flex gap-x-6 mb-2'>
+            <a href='https://t.me/Haydarov_22_01' className='bg-black py-[12px] px-3 border border-neutral-700 rounded-lg hover:shadow-md hover:shadow-blue-950 duration-200'>
           <BiLogoTelegram/>
         </a>
         <a href='https://instagram.com/_hojiakbar_haydarov__?igshid=MzRlODBiNWFlZA==' className='bg-black py-[12px] px-3 border border-neutral-700 rounded-lg hover:shadow-md hover:shadow-blue-950 duration-200'>
@@ -38,6 +39,7 @@ function Contact() {
         <a href='' className='bg-black py-[12px] px-3 border border-neutral-700 rounded-lg hover:shadow-md hover:shadow-blue-950 duration-200'>
           <BiLogoLinkedin/>
         </a>
+        </div>
       </div>
     </div>
     </div>
