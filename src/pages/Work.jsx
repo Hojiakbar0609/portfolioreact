@@ -46,7 +46,7 @@ function Work() {
               <h2 className="card-title capitalize font-bold text-white text-xl lg:text-3xl">
                 { title }
               </h2>
-              <p className='text-zinc-400 mt-2 text-base lg:text-lg w-[200px] lg:w-[400px]'>
+              <p className='text-zinc-400 mt-2 text-base lg:text-lg w-[300px] lg:w-[400px]'>
                 { desciption }
               </p>
               <div className="card-actions justify-end">
